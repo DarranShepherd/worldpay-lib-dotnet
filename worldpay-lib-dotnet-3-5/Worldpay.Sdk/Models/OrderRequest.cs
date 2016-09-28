@@ -30,6 +30,12 @@ namespace Worldpay.Sdk.Models
 
         [DataMember]
         public string customerOrderCode { get; set; }
+        
+        [DataMember]
+        public string orderCodePrefix { get; set; }
+        
+        [DataMember]
+        public string orderCodeSuffix { get; set; }
 
         [DataMember, JsonConverter(typeof(StringEnumConverter))]
         public OrderType? orderType { get; set; }
